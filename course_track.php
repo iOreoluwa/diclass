@@ -307,7 +307,7 @@ include 'includes/student_sidebar.php';
                 $run_cat3 = mysqli_query($con, $get_cat3);
                 $count_cat3 = mysqli_num_rows($run_cat3);
                 if($count_cat3 == 0) {
-                    echo "<h1 class='text-center mt-5'>No Course in this track/a></h1>";
+                    echo "<h1 class='text-center mt-5'>No Course in this track</h1>";
                 } 
                 while($row3 = mysqli_fetch_assoc($run_cat3)){
                       $class_id3 = $row3['class_id'];
